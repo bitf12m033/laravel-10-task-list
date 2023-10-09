@@ -23,5 +23,11 @@
     @else
         <strong>No Record</strong>    
     @endif -->
+    @if($tasks->count())
+        <nav>{{ $tasks->links() }}</nav>
+        
+    @endif
 </div>
+
+
 @endsection
